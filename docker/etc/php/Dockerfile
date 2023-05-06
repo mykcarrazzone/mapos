@@ -1,5 +1,5 @@
 #FROM nanoninja/php-fpm:8.1
-FROM bitnami/php-fpm:8.1
+FROM lendableuk/php-fpm-alpine:8.1.18-alpine3.17
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y \
     g++ \
