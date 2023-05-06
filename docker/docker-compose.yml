@@ -52,7 +52,7 @@ services:
 
     mysql:
         #image: mysql:${MYSQL_MAPOS_VERSION}
-        image: bitnami/mysql:5.7.4
+        image: bitnami/mysql:5.7.41
         container_name: mysql
         restart: always
         env_file:
