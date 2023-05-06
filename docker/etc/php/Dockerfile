@@ -48,7 +48,6 @@ RUN set -eux; \
     docker-php-ext-install gd; \
     php -r 'var_dump(gd_info());'
 
-#FROM lendableuk/php-fpm-alpine:8.1.18-alpine3.17
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y \
     g++ \
