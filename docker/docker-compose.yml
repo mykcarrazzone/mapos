@@ -37,7 +37,8 @@ services:
         command: install --ignore-platform-reqs --no-scripts
 
     phpmyadmin:
-        image: phpmyadmin/phpmyadmin
+        #image: phpmyadmin/phpmyadmin
+        image: phpmyadmin:latest
         container_name: phpmyadmin
         ports:
             - "${PHP_MY_ADMIN_PORT}:80"
