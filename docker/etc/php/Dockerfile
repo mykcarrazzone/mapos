@@ -1,4 +1,5 @@
-FROM nanoninja/php-fpm:8.1
+#FROM nanoninja/php-fpm:8.1
+FROM bitnami/php-fpm:8.1
 
 # Permission for PHP to write in volumes
 RUN usermod -u 1000 www-data
