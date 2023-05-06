@@ -51,7 +51,8 @@ services:
             - mysql
 
     mysql:
-        image: mysql:${MYSQL_MAPOS_VERSION}
+        #image: mysql:${MYSQL_MAPOS_VERSION}
+        image: docker pull mysql:8
         container_name: mysql
         restart: always
         env_file:
